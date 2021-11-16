@@ -2,6 +2,14 @@
   text-align: center;
 }
 
+.App h1 {
+  color: pink;
+  background-color: black;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 2rem;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
