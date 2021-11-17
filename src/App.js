@@ -1,12 +1,16 @@
-import HelloWorld from './components/HelloWorld';
+// import HelloWorld from './components/HelloWorld';
 // Ao importar um componente temos que dar a ele um nome, geralmente o mesmo nome do arquivo,
 // nesse caso é o HelloWorld
-import SayMyName from './components/SayMyName';
-import Pessoa from './components/Pessoas';
-import Frase from './components/Frase';
-import List from './components/List';
+// import SayMyName from './components/SayMyName';
+// import Pessoa from './components/Pessoas';
+// import Frase from './components/Frase';
+// import List from './components/List';
+//import Evento from './components/Evento';
+//import Form from './components/Form';
 import './App.css';
+import Condicional from './components/Condicional';
 
+/*
 function App() {
 
   const nome = 'tio'
@@ -24,8 +28,29 @@ function App() {
       foto="https://via.placeholder.com/150"
       />
       <List />
+      <Evento />
     </div>
   );
 }
 
+function App() {
+  return (
+    <div className="App">
+      <h1>Testando eventos</h1>
+      <Form />
+      <Evento />
+    </div>
+  )
+}
+*/
+
+function App() {
+
+  return (
+    <div className="App">
+      <h1>Renderização condicional</h1>
+      <Condicional />
+    </div>
+  )
+}
 export default App;
