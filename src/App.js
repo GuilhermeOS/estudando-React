@@ -8,8 +8,17 @@
 //import Evento from './components/Evento';
 //import Form from './components/Form';
 //import Condicional from './components/Condicional';
+//import OutraLista from './components/OutraLista';
+//import { useState } from 'react'
+//import SeuNome from './components/SeuNome';
+//import Saudacao from './components/Saudacao';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Home from './pages/Home';
+import Empresa from './pages/Empresa';
+import Contato from './pages/Contato';
+import NavBar from './components/layout/NavBar';
+
 import './App.css';
-import OutraLista from './components/OutraLista';
 
 /*
 function App() {
@@ -55,7 +64,7 @@ function App() {
   )
 }
 
-*/
+
 
 function App() {
 
@@ -67,6 +76,38 @@ function App() {
       <OutraLista itens={meusItens} />
       <OutraLista itens={[]} />
     </div>
+  )
+}
+
+function App() {
+
+  const [nome, setNome] = useState()
+
+  return (
+    <div className="App">
+      <h1>State Lift</h1>
+      <SeuNome setNome={setNome} />
+      <Saudacao nome={nome} />
+    </div>
+  )
+}
+*/
+
+function App() {
+
+  return (
+    <Router>
+
+      <NavBar />
+
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+
+        <Route path="/empresa" element={<Empresa />} />
+
+        <Route path="/contato" element={<Contato />} />
+      </Routes>
+    </Router>
   )
 }
 export default App;

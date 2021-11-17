@@ -70,3 +70,11 @@ State Lift:
     - É normal vários componentes dependerem do mesmo estado;
     - Então precisamos elevar o nível do mesmo a um componente pai;
     - Então centralizamos o state no pai, e definimos quem usa e quem define (setState).
+
+React Router:
+
+    - O React Router é um pacote para mudança de URLs da aplicação.
+    - Podendo assim acessar outras views, sem o page reload.
+    - Trocando apenas uma parte do layout da aplicação, ou seja, o que muda de view para view.
+    - Necessário baixar o pacote no projeto. npm install react-router-dom
+    - E realizar algumas mudanças em como o App é estruturado.
