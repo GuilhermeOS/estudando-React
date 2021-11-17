@@ -7,8 +7,9 @@
 // import List from './components/List';
 //import Evento from './components/Evento';
 //import Form from './components/Form';
+//import Condicional from './components/Condicional';
 import './App.css';
-import Condicional from './components/Condicional';
+import OutraLista from './components/OutraLista';
 
 /*
 function App() {
@@ -42,7 +43,7 @@ function App() {
     </div>
   )
 }
-*/
+
 
 function App() {
 
@@ -50,6 +51,21 @@ function App() {
     <div className="App">
       <h1>Renderização condicional</h1>
       <Condicional />
+    </div>
+  )
+}
+
+*/
+
+function App() {
+
+  const meusItens = ['React', 'Vue', 'Angular']
+
+  return (
+    <div className="App">
+      <h1>Renderização de Listas</h1>
+      <OutraLista itens={meusItens} />
+      <OutraLista itens={[]} />
     </div>
   )
 }
